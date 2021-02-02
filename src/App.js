@@ -70,7 +70,7 @@ function App() {
         })}
       <div className="footer">
         © Ali Ravaee
-        <a href='https://github.com/aravaee' target='_blank' rel='noopener'><FaGithub className="git-logo" /></a>
+        <a href='https://github.com/aravaee' target='_blank' rel='noreferrer'><FaGithub className="git-logo" /></a>
       </div>
     </div>
   );

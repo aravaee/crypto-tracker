@@ -10,7 +10,7 @@
   /* height: 80px; */
   height: 4em;
   border-bottom: 3px solid #3fa287;
-  border-radius: 4%;
+  /* border-radius: 4%; */
   width: 85%;
 }
 
@@ -82,7 +82,7 @@
     display: block;
     height: 7em;
     border-bottom: 5px solid #3fa287;
-    width: 98% !important;
+    width: 96% !important;
   }
 
   .coin {
