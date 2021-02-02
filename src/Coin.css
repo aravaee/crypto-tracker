@@ -1,0 +1,159 @@
+.coin-container {
+  display: flex;
+  justify-content: center;
+}
+
+.coin-row {
+  display: flex;
+
+  align-items: center;
+  /* height: 80px; */
+  height: 4em;
+  border-bottom: 3px solid #3fa287;
+  border-radius: 4%;
+  width: 85%;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  /* padding-right: 24px; */
+  width: 50%;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 220px;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 2%;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.coin-data {
+  display: flex;
+  /* text-align: right; */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coin-price {
+  width: 100px;
+  text-align: right;
+}
+
+.coin-volume {
+  width: 175px;
+  text-align: right;
+}
+
+.coin-marketcap {
+  width: 175px;
+  text-align: right;
+}
+
+.coin-percent {
+  width: 75px;
+  text-align: right;
+}
+
+.red {
+  color: #c14939;
+}
+
+.green {
+  color: #4dd146;
+}
+
+.coin-volume-small,
+.coin-marketcap-small {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .coin-row {
+    display: block;
+    height: 7em;
+    border-bottom: 5px solid #3fa287;
+    width: 98% !important;
+  }
+
+  .coin {
+    /* margin-top: 2%; */
+    width: 100% !important;
+  }
+  .coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 2%;
+  }
+  .coin h1 {
+    width: 100%;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .coin-symbol {
+    margin-top: 0;
+  }
+
+  .coin-price {
+    width: 80px;
+  }
+  .coin-volume {
+    width: 125px;
+  }
+  .coin-percent {
+    width: 30px;
+  }
+  .coin-marketcap {
+    width: 130px;
+    display: none;
+  }
+  .coin-volume {
+    display: none;
+  }
+  .coin-volume-small,
+  .coin-marketcap-small {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .coin {
+    width: 65%;
+  }
+  .coin-row {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .coin h1 {
+    font-size: 16px;
+  }
+  .coin img {
+    height: 28px;
+    width: 28px;
+  }
+  .coin {
+    margin-top: 2%;
+    /* width: 100% !important; */
+  }
+  .coin-row {
+    width: 100% !important;
+    height: 7em;
+  }
+  .coin-volume {
+    width: 120px;
+  }
+}

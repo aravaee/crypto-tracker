@@ -1,38 +1,152 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
+  font-family: "Montserrat", sans-serif;
+  background-color: #2d2e2d;
+  color: #f1f5c4;
+}
+
+.navbar-logo {
+  justify-self: start;
+  text-decoration: none;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.coin-app {
+  margin: 25px 0;
+  color: #f1f5c4;
+  /* new */
+  position: relative;
+  min-height: 95vh;
+}
+
+.topnav {
+  overflow: hidden;
+  padding-bottom: 2%;
+  /* background-color: blue; */
+}
+
+.topnav .navbar-logo {
+  float: left;
+  display: block;
+}
+.searchTerm {
+  border: 5px solid #3fa287;
+  outline: none;
+  height: 2rem;
+  /* margin-right: 5%; */
+  padding-left: 4%;
+  border-radius: 5px;
+  /* width: 100%; */
+}
+.search-container {
+  /* chaneg this to block inline for mobile */
+  display: flex;
+  margin-right: 1%;
+  float: right;
+  /* width: 15%; */
+}
+
+.searchTerm:focus {
+  color: #f1f5c4;
+}
+
+.footer {
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.git-logo {
+  padding-left: 2%;
+}
+.no-result {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  animation: mymove 5s infinite;
+}
+.error-logo {
+  font-size: 2rem;
+  padding-right: 1%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error-and-logo {
+  animation: make-visible 0s 1.1s forwards;
+  visibility: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes make-visible {
+  to {
+    visibility: visible;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
 }
-
-.App-link {
-  color: #61dafb;
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #f1f5c4;
+  border-color: #f1f5c4 transparent #f1f5c4 transparent;
+  animation: lds-dual-ring 1s forwards;
 }
-
-@keyframes App-logo-spin {
-  from {
+@keyframes lds-dual-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(360deg);
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbar-logo {
+    font-size: 2.5rem;
+    transition: 300ms linear;
+  }
+  .navbar-icon {
+    font-size: 1.5rem;
+  }
+
+  .search-container {
+    width: 100%;
+    display: inline-block;
+    margin-right: 0;
+    padding-top: 2.5%;
+  }
+  .searchTerm {
+    width: 93%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .searchTerm {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .searchTerm {
+    width: 91%;
   }
 }
