@@ -138,6 +138,12 @@
   .searchTerm {
     width: 92%;
   }
+  .error-and-logo {
+    font-size: 2rem;
+  }
+  .error-logo {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
